@@ -1,7 +1,0 @@
-# Harpoon
-* `<leader>a`: add file to harpoon
-* `<C-e>`: access harpoon list
-* `<C-1>`: access 1st element in harpoon list
-
-# Telescope
-* `<leader><C-p>`: look for git files
