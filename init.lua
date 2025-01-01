@@ -4,6 +4,11 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- <leader>w to save
+vim.keymap.set('n', '<leader>w', ':w<CR>')
+-- <leader>q to quit
+vim.keymap.set('n', '<leader>q', ':q<CR>')
+
 ------------------------
 -- [begin] primeagen set
 ------------------------
