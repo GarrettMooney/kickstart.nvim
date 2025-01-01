@@ -237,6 +237,8 @@ require('lazy').setup({
   -- Use `opts = {}` to force a plugin to be loaded.
   --
 
+  'github/copilot.vim',
+
   -- harpoon
   {
     'ThePrimeagen/harpoon',
@@ -632,6 +634,14 @@ require('lazy').setup({
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
       require('mason-lspconfig').setup {
+        ensure_installed = {
+          'gopls',
+          'html',
+          'eslint',
+          'pyright',
+          'ruff',
+          'rust_analyzer',
+        },
         handlers = {
           function(server_name)
             local server = servers[server_name] or {}
